@@ -1,4 +1,4 @@
-package ficha;
+package tema1;
 
 /*
     Realizar un programa que se le introduzca una nota (un valor entero entre 0 y 10) y nos muestre por pantalla la nota

@@ -1,4 +1,4 @@
-package ficha;
+package tema1;
 
 /*
     Haz 3 versiones de un mismo programa que pida que se introduzcan por teclado 2 números int sobre sendas variables

@@ -1,4 +1,4 @@
-package ficha;
+package tema1;
 
 /*
     Diseña un algoritmo capaz de obtener la letra del DNI a partir del número del DNI. Consiste en dividir dicho número
