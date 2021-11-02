@@ -2,7 +2,7 @@ package tema3;
 
 import java.util.Scanner;
 
-public class Ejercicio32 {
+public class Ejercicio33 {
 
     public static void main(String[] args) {
 
@@ -10,15 +10,18 @@ public class Ejercicio32 {
 
         System.out.print("Introduce un número decimal: ");
         int decimal = scanner.nextInt();
+        System.out.print("Introduce la base destino: ");
+        int base = scanner.nextInt();
         int exponente = 0;
+
         long binario = 0;
 
         while (decimal > 0) {
-            binario += (decimal % 2) * Math.pow(10, exponente);
-            decimal /= 2;
+            binario += (decimal % base) * Math.pow(10, exponente);
+            decimal /= base;
             exponente++;
         }
-        System.out.println("Binario: " + binario);
+        System.out.println("Base" + base +": " + binario);
     }
 
 }
