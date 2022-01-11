@@ -32,6 +32,7 @@ public class Ejercicio13 {
         Contacto(String no, long nu) {
             this.nombre = no;
             this.numero = nu;
+            this.fechaAltaAgenda = LocalDate.now();
         }
 
     }
