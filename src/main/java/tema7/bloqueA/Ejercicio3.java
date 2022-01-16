@@ -1,6 +1,4 @@
-package tema7;
-
-import java.util.Arrays;
+package tema7.bloqueA;
 
 public class Ejercicio3 {
 

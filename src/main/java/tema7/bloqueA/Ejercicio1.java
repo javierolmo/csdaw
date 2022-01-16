@@ -1,7 +1,4 @@
-package tema7;
-
-import java.util.Arrays;
-import java.util.Random;
+package tema7.bloqueA;
 
 public class Ejercicio1 {
 

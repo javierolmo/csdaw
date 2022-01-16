@@ -1,4 +1,4 @@
-package tema7;
+package tema7.bloqueA;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;

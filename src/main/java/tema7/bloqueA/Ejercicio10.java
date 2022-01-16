@@ -1,4 +1,4 @@
-package tema7;
+package tema7.bloqueA;
 
 import java.time.Month;
 import java.util.Random;

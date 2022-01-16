@@ -1,4 +1,4 @@
-package tema7;
+package tema7.bloqueA;
 
 public class Ejercicio2 {
 
