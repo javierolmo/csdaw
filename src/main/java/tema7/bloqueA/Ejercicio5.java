@@ -25,11 +25,19 @@ public class Ejercicio5 {
 
     public static void programa2() {
         Primitiva primitiva = new Primitiva();
+        int[] frecuenciaAciertos = new int[Primitiva.NUMEROS_BOLETO+1];
         System.out.println("Combinación ganadora: " + Arrays.toString(primitiva.getResultado()));
         System.out.println("Simulando boletos aleatorios:");
         for (int i=1; i<=1000; i++) {
             int[] boleto = primitiva.boletoAleatorio();
-            System.out.printf("Boleto aleatorio #%d (%s). Aciertos: %d\n", i, Arrays.toString(boleto), primitiva.comprobarAciertos(boleto));
+            int aciertos = primitiva.comprobarAciertos(boleto);
+            frecuenciaAciertos[aciertos] = frecuenciaAciertos[aciertos]+1;
+            System.out.printf("Boleto aleatorio #%d (%s). Aciertos: %d\n", i, Arrays.toString(boleto), aciertos);
+        }
+
+        System.out.println("--------------------------------------");
+        for(int i=0; i<=Primitiva.NUMEROS_BOLETO; i++) {
+            System.out.printf("Frecuencia %d aciertos: %d\n", i, frecuenciaAciertos[i]);
         }
     }
 
@@ -50,8 +58,8 @@ public class Ejercicio5 {
 
     public static void main(String[] args) {
         // programa1();
-        //programa2();
-        programa3();
+        programa2();
+        //programa3();
     }
 
 }
