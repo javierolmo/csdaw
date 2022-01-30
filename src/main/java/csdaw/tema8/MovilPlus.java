@@ -2,7 +2,7 @@ package csdaw.tema8;
 
 public class MovilPlus extends MovilPrepago {
 
-    MovilPlus(long numeroMovil, float costeMinutoLlamada, float costeMB, float saldo) {
+    public MovilPlus(long numeroMovil, float costeMinutoLlamada, float costeMB, float saldo) {
         super(numeroMovil, 0, costeMinutoLlamada, costeMB, saldo);
     }
 

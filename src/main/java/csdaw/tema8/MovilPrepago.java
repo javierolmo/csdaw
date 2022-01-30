@@ -8,7 +8,7 @@ public class MovilPrepago {
     final private float costeConsumoMB;
     private float saldo;
 
-    MovilPrepago(long numeroMovil, float costeEstablecimientoLlamada, float costeMinutoLlamada, float costeConsumoMB, float saldo) {
+    public MovilPrepago(long numeroMovil, float costeEstablecimientoLlamada, float costeMinutoLlamada, float costeConsumoMB, float saldo) {
         this.numeroMovil = numeroMovil;
         costeEstablecLlamada = costeEstablecimientoLlamada;
         this.costeMinutoLlamada = costeMinutoLlamada;
