@@ -17,16 +17,21 @@ public class Primitiva {
         return resultado;
     }
 
-    private int numeroAleatorioSinRepetidos(int[] repetidos) {
-        int result;
-        boolean repetido = false;
-        do {
-            result = new Random().nextInt(hasta + 1 - desde) + desde;
-            for(int i=0; i<repetidos.length; i++) {
-                if(repetidos[i] == result) repetido = false;
-            }
-        } while (repetido);
-        return result;
+    private int numeroAleatorioSinRepetidos(int[] existentes) {
+        int aleatorio = new Random().nextInt(hasta + 1 - desde) + desde;
+        boolean repetido = existeEnArray(existentes, aleatorio);
+        if (repetido) {
+            return numeroAleatorioSinRepetidos(existentes);
+        } else {
+            return aleatorio;
+        }
+    }
+
+    private boolean existeEnArray(int[] existentes, int numero) {
+        for (int existente : existentes) {
+            if(existente == numero) return true;
+        }
+        return false;
     }
 
     public int comprobarAciertos(int[] boleto) {

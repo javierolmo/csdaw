@@ -58,8 +58,8 @@ public class Ejercicio5 {
 
     public static void main(String[] args) {
         // programa1();
-        programa2();
-        //programa3();
+        //programa2();
+        programa3();
     }
 
 }
