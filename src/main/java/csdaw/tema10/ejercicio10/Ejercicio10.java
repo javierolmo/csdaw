@@ -1,4 +1,4 @@
-package csdaw.tema10;
+package csdaw.tema10.ejercicio10;
 
 import csdaw.tema10.ejercicio9.BallenaAzul;
 import csdaw.tema10.ejercicio9.Delfin;
